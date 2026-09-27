@@ -1,125 +1,228 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Irson 的目标 (Irson's Goal)</title>
+    <title>Irson's Goal</title>
     <style>
+      :root {
+        --primary-color: #1e3a8a;
+        --accent-color: #2563eb;
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-color: #334155;
+        --heading-color: #0f172a;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, sans-serif;
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
         line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f9f9f9;
+        padding: 40px 20px;
       }
+
       .container {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
       }
+
       h1 {
-        color: #2c3e50;
         text-align: center;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+        font-size: 2rem;
       }
+
       h2 {
-        color: #2980b9;
-        margin-top: 25px;
-      }
-      ul {
-        list-style-type: disc;
-        padding-left: 20px;
-      }
-      li {
+        color: var(--primary-color);
+        font-size: 1.1rem;
         margin-bottom: 12px;
       }
-      .target-date {
-        color: #e67e22;
-        font-weight: bold;
+
+      .goal-card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 24px 28px;
+        margin-bottom: 16px;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.05),
+          0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        border-left: 5px solid var(--accent-color);
       }
-      .section-title {
-        font-weight: bold;
-        color: #16a085;
-        margin-top: 20px;
+
+      .focus-card {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 12px;
+        padding: 24px 28px;
+        margin: 24px 0;
       }
-      .affirmation {
-        background-color: #e8f8f5;
-        border-left: 4px solid #1abc9c;
-        padding: 15px;
-        margin-top: 25px;
-        border-radius: 0 4px 4px 0;
+
+      .focus-card ol {
+        padding-left: 20px;
+      }
+
+      .focus-card li {
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--heading-color);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 32px;
+        font-style: italic;
+        color: #64748b;
+      }
+
+      footer p {
+        margin-bottom: 8px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Irson 的目标</h1>
+    <main class="container">
+      <h1>Irson's Goal</h1>
 
-      <ul>
-        <li>耳朵听力良好，康复，能够听得更清楚。</li>
-        <li>整个身体完整、完美、运作良好且正常。</li>
-        <li>
-          单身，没有女朋友，和爸爸、妈妈还有 Kelly
-          住在一起，不需要再去想女孩子的事了。
-        </li>
-        <li>上帝已经允许我们生活在对我们来说最好的国家，那就是生活在美国。</li>
-        <li>
-          完成网页开发（Web Development）的学习。<span class="target-date"
-            >（目标日期：2027年10月1日）</span
-          >
-        </li>
-        <li>
-          我想为一家美国公司远程工作。<span class="target-date"
-            >（目标日期：2027年11月30日）</span
-          >
-        </li>
-        <li>
-          在美国为奶奶接接受医学治疗，让奶奶保持健康、长寿。<span
-            class="target-date"
-            >（目标日期：2028年10月1日）</span
-          >
-        </li>
-        <li>
-          买一辆特斯拉汽车，可以在纽约、长岛、上州以及外州自驾游；在美国各地旅游，不需要再去国外旅游了。<span
-            class="target-date"
-            >（目标日期：2029年5月15日）</span
-          >
-        </li>
-        <li>
-          在纽约皇后区埃尔姆赫斯特维特大道 83-45 号（83-45 Vietor Avenue,
-          Elmhurst, Queens, New
-          York）买一套房子；生活在美国这个最好的国家，不需要搬家，也不需要再去考虑其他国家了。<span
-            class="target-date"
-            >（目标日期：2030年6月30日）</span
-          >
-        </li>
-        <li>
-          我们在美国生活和旅游，去印尼探望家人——只需要这两个国家，不需要再去其他任何国外地方了。<span
-            class="target-date"
-            >（目标日期：2035年1月1日）</span
-          >
-        </li>
-      </ul>
+      <section aria-label="Personal Goals">
+        <div class="goal-card">
+          All ears are good listening, healed, and able to hear more clearly.
+        </div>
+        <div class="goal-card">
+          The whole body is complete, perfect, functioning well, and normal.
+        </div>
+        <div class="goal-card">
+          Single, no girlfriend, live together with Dad, Mom, and Kelly, no need
+          to think about girls anymore.
+        </div>
+        <div class="goal-card">
+          God has given us to live in the best country for us, which is live in
+          the United States.
+        </div>
+        <div class="goal-card">
+          Finished Learning Web Development. (Target: October 1, 2029)
+        </div>
+        <div class="goal-card">
+          I want to work remotely at the U.S. company. (Target: November 30,
+          2029)
+        </div>
+        <div class="goal-card">
+          Get medical treatment for Grandma (Nainai) in the United States, so
+          that Grandma stays healthy and lives a long life. (Target: October 1,
+          2030)
+        </div>
+        <div class="goal-card">
+          Buy a Tesla car to take road trips around New York, Long Island,
+          Upstate, and out of state; travel around the United States, no need to
+          travel abroad anymore. (Target: May 15, 2031)
+        </div>
 
-      <div class="section-title">通过专注于以下事项来实现：</div>
-      <ul>
-        <li>学习网页开发</li>
-        <li>学习英语</li>
-        <li>学习中文（普通话）</li>
-      </ul>
+        <div class="goal-card">
+          Buy a home at 83-45 Vietor Avenue, Elmhurst, Queens, New York; live in
+          the United States, the best country, no need to move, no need to think
+          about other countries anymore. (Target: June 30, 2032)
+        </div>
 
-      <div class="affirmation">
-        <p>我希望这些在“Irson 的目标”中能够在未来成为现实。</p>
-        <p>这一切在“Irson 的目标”中都是完全真实的。</p>
-        <p>妈妈、Kelly、爸爸和我，在“Irson 的目标”中都牢牢记着这一切。</p>
-        <p>我希望这些梦想能在“Irson 的目标”中得以实现。</p>
-      </div>
-    </div>
+        <div class="goal-card">
+          We live and travel in the United States, visit family in Indonesia;
+          only 2 countries, no need to go anywhere else abroad. (Target: January
+          1, 2035)
+        </div>
+      </section>
+
+      <section class="focus-card">
+        <h2>Achieved by focusing on:</h2>
+        <ol>
+          <li>Learning Web Development</li>
+          <li>Learning English</li>
+          <li>Learning Mandarin Chinese</li>
+        </ol>
+      </section>
+
+      <section class="focus-card">
+        <h2>Country Rankings for Irson's Goal:</h2>
+        <ol>
+          <li>🇺🇸 United States (Yes)</li>
+          <li>🇮🇸 Iceland (No)</li>
+          <li>🇳🇴 Norway (No)</li>
+          <li>🇮🇪 Ireland (No)</li>
+          <li>🇩🇰 Denmark (No)</li>
+          <li>🇨🇭 Switzerland (No)</li>
+          <li>🇫🇮 Finland (No)</li>
+          <li>🇸🇪 Sweden (No)</li>
+          <li>🇩🇪 Germany (No)</li>
+          <li>🇳🇱 Netherlands (No)</li>
+          <li>🇦🇹 Austria (No)</li>
+          <li>🇧🇪 Belgium (No)</li>
+          <li>🇱🇺 Luxembourg (No)</li>
+          <li>🇬🇧 United Kingdom (No)</li>
+          <li>🇸🇮 Slovenia (No)</li>
+          <li>🇨🇿 Czech Republic (No)</li>
+          <li>🇫🇷 France (No)</li>
+          <li>🇪🇸 Spain (No)</li>
+          <li>🇨🇾 Cyprus (No)</li>
+          <li>🇵🇹 Portugal (No)</li>
+          <li>🇪🇪 Estonia (No)</li>
+          <li>🇲🇨 Monaco (No)</li>
+          <li>🇱🇮 Liechtenstein (No)</li>
+          <li>🇲🇹 Malta (No)</li>
+          <li>🇮🇹 Italy (No)</li>
+          <li>🇵🇱 Poland (No)</li>
+          <li>🇸🇲 San Marino (No)</li>
+          <li>🇦🇩 Andorra (No)</li>
+          <li>🇬🇷 Greece (No)</li>
+          <li>🇱🇹 Lithuania (No)</li>
+          <li>🇭🇷 Croatia (No)</li>
+          <li>🇸🇰 Slovakia (No)</li>
+          <li>🇱🇻 Latvia (No)</li>
+          <li>🇮🇩 Indonesia (Yes)</li>
+          <li>🇷🇴 Romania (No)</li>
+          <li>🇭🇺 Hungary (No)</li>
+          <li>🇹🇷 Turkey (No)</li>
+          <li>🇰🇿 Kazakhstan (No)</li>
+          <li>🇲🇪 Montenegro (No)</li>
+          <li>🇧🇬 Bulgaria (No)</li>
+          <li>🇷🇸 Serbia (No)</li>
+          <li>🇬🇪 Georgia (No)</li>
+          <li>🇦🇱 Albania (No)</li>
+          <li>🇲🇰 North Macedonia (No)</li>
+          <li>🇦🇲 Armenia (No)</li>
+          <li>🇦🇿 Azerbaijan (No)</li>
+          <li>🇽🇰 Kosovo (No)</li>
+          <li>🇧🇦 Bosnia and Herzegovina (No)</li>
+          <li>🇲🇩 Moldova (No)</li>
+          <li>🇻🇦 Vatican City (No)</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>I want this to become real in the future in Irson's Goal.</p>
+        <p>All of this is completely true in Irson's Goal.</p>
+        <p>
+          Dad, Mom, Kelly, and I all remember this very well in Irson's Goal.
+        </p>
+        <p>I want these dreams to be achieved in Irson's Goal.</p>
+      </footer>
+    </main>
   </body>
 </html>
